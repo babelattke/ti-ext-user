@@ -82,7 +82,8 @@ class Account extends \System\Classes\BaseComponent
             ],
             'agreeRegistrationTermsPage' => [
                 'label' => 'Registration Terms',
-                'type' => 'select',
+                'type' => 'switch',
+                'default' => TRUE,
                 'options' => [static::class, 'getStaticPageOptions'],
                 'placeholder' => 'lang:admin::lang.text_please_select',
                 'comment' => 'Require customers to agree to terms before an account is registered',
